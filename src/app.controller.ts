@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/word')
+  getQuotes(): string {
+    return this.appService.showRandomQuotes();
+  }
 }
